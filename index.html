@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prabin Kumar Chaudhary — Teaching Portfolio</title>
+  <meta name="description" content="Teaching portfolio of Prabin Kumar Chaudhary showcasing online teaching, mentoring, workshops, placements, gallery, and contact." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand-wrap">
+        <h1 class="brand"><span class="accent-all">Prabin Kumar Chaudhary</span></h1>
+      </div>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#online">Online Teaching</a>
+        <a href="#mentoring">Mentoring</a>
+        <a href="#workshops">Workshops</a>
+        <a href="#placements">Placements</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Mithila Institute of Technology — Computer Science Department</h2>
+      <p>Guiding learners in HTML, CSS, Java, Python, C, and C++ with practice‑first methods and accessible resources.</p>
+      <a class="btn" href="#online">Explore Teaching</a>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h3>About</h3>
+      <p>Computer Science educator with 13 years of experience supporting high‑school and undergraduate learners. Work centers on building fundamentals through short videos, lab tasks, and code reviews. Areas include programming pedagogy, data structures & algorithms, and educational technology.</p>
+      <h4>Teaching Philosophy</h4>
+      <p>Learning is anchored in building, reflection, and iteration. Sessions emphasize weekly practice, formative feedback, and peer learning. Assessment balances correctness, style, and documentation to cultivate professional habits. Materials and rubrics are revised each term based on analytics and student feedback.</p>
+      <ul class="facts two-col">
+        <li><span class="label">Name:</span> <span class="accent-all">Prabin Kumar Chaudhary</span></li>
+        <li><span class="label">Institution:</span> Mithila Institute of Technology</li>
+        <li><span class="label">Department:</span> Computer Science</li>
+        <li><span class="label">Contact:</span> <a href="mailto:prabinkumarchaudhary83@gmail.com">prabinkumarchaudhary83@gmail.com</a></li>
+      </ul>
+    </section>
+
+    <section id="online" class="card">
+      <h3>Online Teaching</h3>
+      <ul class="bullets">
+        <li>Micro‑lectures for HTML/CSS, Python, Java, C/C++ with paired worksheets</li>
+        <li>Blended model: weekly lab tasks, auto‑graded quizzes, solution walk‑throughs</li>
+        <li>Office hours on Meet/Teams and discussion forum for Q&A</li>
+      </ul>
+    </section>
+
+    <section id="mentoring" class="card">
+      <h3>Student Mentoring</h3>
+      <ul class="bullets">
+        <li>Guided mini‑projects in web development and algorithms</li>
+        <li>Code clinics on style, testing, and documentation</li>
+        <li>Career advising for CS admissions and internships</li>
+      </ul>
+    </section>
+
+    <section id="workshops" class="card">
+      <h3>Workshops & Outreach</h3>
+      <ul class="bullets">
+        <li>Intro to Git and GitHub (hands‑on, 3 hours)</li>
+        <li>Python for Data Fundamentals (NumPy, plotting; 1 day)</li>
+        <li>HTML/CSS from Zero to Responsive (project‑based; 1 day)</li>
+      </ul>
+    </section>
+
+    <section id="placements" class="card">
+      <h3>Placements & Industry Links (Nepal)</h3>
+      <ul class="bullets">
+        <li>Career prep: resume/portfolio reviews and mock interviews for software roles</li>
+        <li>Referral network and alumni connects for internships and entry‑level roles in Kathmandu and major hubs</li>
+        <li>Industry sessions: invited hiring Q&As with local companies</li>
+        <li>Internship pipelines via project collaborations; guidance for take‑home assignments</li>
+      </ul>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="card">
+      <h3>Gallery</h3>
+      <div class="slider" aria-roledescription="carousel" aria-label="Classroom gallery">
+        <div class="slider__track" style="transform: translateX(0%);">
+          <figure class="frame" role="group" aria-label="1 of 2">
+            <img src="teaching.jpg" alt="Students writing during a classroom activity" width="1200" height="675" />
+            <figcaption class="slide__caption">Active learning session</figcaption>
+          </figure>
+          <figure class="frame" role="group" aria-label="2 of 2">
+            <img src="computersession.jpg" alt="Students at computers during a lab session" width="1200" height="675" />
+            <figcaption class="slide__caption">Computer lab practice</figcaption>
+          </figure>
+        </div>
+
+        <div class="slider__controls" role="group" aria-label="Carousel controls">
+          <button class="ctrl prev" type="button" aria-label="Previous slide">‹</button>
+          <button class="ctrl next" type="button" aria-label="Next slide">›</button>
+          <button class="ctrl pause" type="button" aria-pressed="false" aria-label="Pause auto-rotate">Pause</button>
+        </div>
+
+        <div class="slider__dots" role="tablist" aria-label="Select slide">
+          <button role="tab" aria-selected="true" tabindex="0" class="dot"></button>
+          <button role="tab" aria-selected="false" tabindex="-1" class="dot"></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="card">
+      <h3>Achievements & Impact</h3>
+      <ul class="bullets">
+        <li>Organized 6 campus coding workshops; mentored 25+ student projects</li>
+        <li>Developed DS&A practical rubrics adopted across sections</li>
+        <li>Led peer‑learning initiatives improving lab completion rates</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h3>Contact</h3>
+      <form id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Your Name</label>
+          <input id="name" name="name" type="text" required minlength="2" />
+          <small class="error" aria-live="polite"></small>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+          <small class="error" aria-live="polite"></small>
+        </div>
+        <div class="field">
+          <label for="msg">Message</label>
+          <textarea id="msg" name="msg" rows="5" required minlength="10" maxlength="500"></textarea>
+          <small class="error" aria-live="polite"></small>
+        </div>
+        <button class="btn" type="submit">Send</button>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="muted">Email (alternate): <a href="mailto:prabinkumarchaudhary83@gmail.com">prabinkumarchaudhary83@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> <span class="accent-all">Prabin Kumar Chaudhary</span> • Computer Science Department • Mithila Institute of Technology</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #14b8ff;
+  --ring: #14b8ff33;
+  accent-color: var(--accent);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+.container { max-width: 1000px; margin: 0 auto; padding: 0 1rem; }
+
+/* Header */
+.site-header { position: sticky; top: 0; background: rgba(15,23,42,0.9); backdrop-filter: blur(8px); border-bottom: 1px solid #1f2937; z-index: 10; }
+.header-row { display: flex; align-items: center; justify-content: space-between; padding: 0.7rem 0; gap: 1rem; }
+.brand { margin: 0; font-size: 1.15rem; letter-spacing: 0.2px; }
+.accent-all { color: var(--accent); }
+.main-nav { display: flex; align-items: center; gap: 1.1rem; flex-wrap: wrap; }
+.main-nav a { color: var(--muted); text-decoration: none; font-weight: 600; }
+.main-nav a:hover, .main-nav a:focus { color: var(--text); outline: none; }
+
+/* Hero */
+.hero { background: linear-gradient(180deg, #0b1225, #0f172a 60%); padding: 3.2rem 0; border-bottom: 1px solid #1f2937; }
+.hero h2 { margin: 0 0 0.5rem; font-size: 2rem; }
+.btn { display: inline-block; background: var(--accent); color: #042326; padding: 0.6rem 1rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; border: none; cursor: pointer; }
+.btn:hover { filter: brightness(1.05); }
+
+/* Cards & body */
+main { padding: 2rem 0; }
+.card { background: var(--card); border: 1px solid #1f2937; border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 1rem; }
+.card h3 { margin-top: 0; font-size: 1.3rem; }
+.bullets { padding-left: 1.1rem; margin: 0.4rem 0 0; }
+.facts { list-style: disc inside; margin: 0.4rem 0 0; padding-left: 0; color: var(--text); }
+.facts.two-col { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 0.4rem 1rem; }
+.label { color: var(--muted); margin-right: 0.25rem; }
+.muted { color: var(--muted); font-size: 0.95rem; }
+
+/* Form */
+.field { margin-bottom: 0.9rem; display: grid; gap: 0.35rem; }
+label { font-weight: 600; }
+input, textarea { width: 100%; padding: 0.6rem 0.7rem; color: var(--text); background: #0b1225; border: 1px solid #243041; border-radius: 0.5rem; outline: none; }
+input:focus, textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 4px var(--ring); }
+.error { color: #fda4af; min-height: 1rem; }
+.status { margin-top: 0.5rem; color: #86efac; min-height: 1.2rem; }
+
+/* Footer */
+.site-footer { border-top: 1px solid #1f2937; padding: 1rem 0 2rem; color: #cbd5e1; text-align: center; }
+
+/* Slider (transform-based) */
+.slider { position: relative; overflow: hidden; border-radius: 0.75rem; }
+.slider__track { display: flex; width: 100%; transition: transform 0.6s ease; }
+.frame { min-width: 100%; margin: 0; position: relative; }
+.frame img { width: 100%; height: 360px; object-fit: cover; display: block; }
+.slide__caption { position: absolute; left: 0; right: 0; bottom: 0; padding: 0.6rem 0.9rem; background: rgba(0,0,0,0.45); color: #e5e7eb; }
+
+.slider__controls { position: absolute; inset: 0; display: flex; justify-content: space-between; align-items: center; pointer-events: none; padding: 0 0.25rem; }
+.ctrl { pointer-events: auto; background: rgba(15,23,42,0.75); color: #e5e7eb; border: 1px solid #1f2937; border-radius: 0.5rem; width: 2.2rem; height: 2.2rem; display: grid; place-items: center; }
+.ctrl:hover { background: rgba(15,23,42,0.9); }
+.ctrl.pause { position: absolute; right: 0.6rem; bottom: 0.6rem; width: auto; padding: 0.3rem 0.6rem; background: var(--accent); color: #042326; border-color: transparent; }
+
+.slider__dots { position: absolute; bottom: 0.6rem; left: 0.6rem; display: flex; gap: 0.4rem; }
+.dot { width: 10px; height: 10px; border-radius: 999px; border: 2px solid var(--accent); background: transparent; }
+.dot[aria-selected="true"] { background: var(--accent); }
+
+@media (max-width: 720px) {
+  .header-row { gap: 0.75rem; }
+  .main-nav { gap: 0.9rem; }
+}
+@media (max-width: 640px) {
+  .hero h2 { font-size: 1.6rem; }
+  .frame img { height: 260px; }
+}
